@@ -1,0 +1,130 @@
+.search{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    background-color:rgb(203, 219, 246);
+    height:auto;
+}
+.status{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    background-color: #2AA8FF;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: left;
+    width: 80%;
+    height: auto
+}
+.textTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto; 
+    color:#787887;
+    gap: 8px;
+}
+.textHeader {
+    line-height: 1; 
+    margin-bottom: 8px;
+
+font-size: 24px;
+font-weight: 500;
+line-height: 36px;
+text-align: left;
+
+text-decoration-skip-ink: none;
+
+
+}
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    gap:20px;
+    height: auto;
+    padding: 20px;
+}
+.searchContainer{
+    display: flex;
+    position: relative;
+    top:-50px;
+    width:80%;
+    height: 100px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #E7E7E7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBar {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 30px;
+    width: 60%;
+
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    background-color: #f8faff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    width: 600px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.inputContainer .icon {
+    margin-right: 8px;
+}
+
+.input {
+    border: none;
+    outline: none;
+    background: none;
+    flex: 1;
+    font-size: 14px;
+    color: #707070;
+}
+
+.input::placeholder {
+    color: #b0b0b0;
+}
+
+.searchButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2aa8ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.searchButton:hover {
+    background-color: #34567a;;
+}
+
+.searchButton .buttonIcon {
+    margin-right: 5px;
+}

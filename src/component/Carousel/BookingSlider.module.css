@@ -1,0 +1,38 @@
+.swiperContainer {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .slideCard {
+    border-bottom: 1px solid #ddd;
+    width: 150px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .dayTitle {
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .slotsAvailable {
+    color: green;
+    font-size: 0.9rem;
+  }
+  .cardContainer{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width:80%;
+    overflow: hidden;
+  }
+  .active{
+    border-bottom: 5px solid green
+  }
+
+  

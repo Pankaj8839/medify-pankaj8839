@@ -1,0 +1,23 @@
+.slotBox {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid#2AA7FF;
+    background-color: white;
+    color:#2AA7FF;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .slotBox:hover {
+    background-color: #2AA7FF;
+    color: white;
+  }
+  
+  .selected {
+    background-color:#2AA7FF;
+    color: white;
+    font-weight: bold;
+  }

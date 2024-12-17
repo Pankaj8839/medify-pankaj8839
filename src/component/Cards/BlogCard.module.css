@@ -1,0 +1,40 @@
+.blogCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    width: 300px;
+
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    border-radius: 10px;
+}
+.blogCard img{
+    width: 100%;
+}
+.date{
+    margin-top:25px;
+    margin-left: 10px;
+    color:#b4b8c2
+}
+.title{
+margin-left: 10px;
+font-size: 18px;
+font-weight: 500; 
+text-align: left;
+text-decoration-skip-ink: none;
+}
+.readMore{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    color:#2AA8FF
+}
+.readMore img{
+ width: 30px;
+ height: 30px;
+}
+.blogCard p{
+    margin-left: 5px
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Navbar.module.css';
 import logo from "../../assests/logo.png";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -10,12 +11,12 @@ const Navbar = () => {
         <span className={styles.logoText}>Medify</span>
       </div>
       <ul className={styles.navbarLinks}>
-        <li><a href="#find-doctors" className={styles.navLink}>Find Doctors</a></li>
-        <li><a href="#hospitals" className={styles.navLink}>Hospitals</a></li>
-        <li><a href="#medicines" className={styles.navLink}>Medicines</a></li>
-        <li><a href="#surgeries" className={styles.navLink}>Surgeries</a></li>
-        <li><a href="#software" className={styles.navLink}>Software for Provider</a></li>
-        <li><a href="#facilities" className={styles.navLink}>Facilities</a></li>
+        <li><Link to="/" className={styles.navLink}>Find Doctors</Link></li>
+        <li><Link to="/"  className={styles.navLink}>Hospitals</Link></li>
+        <li><Link to="/"  className={styles.navLink}>Medicines</Link></li>
+        <li><Link to="/"  className={styles.navLink}>Surgeries</Link></li>
+        <li><Link to="/"  className={styles.navLink}>Software for Provider</Link></li>
+        <li><Link to="/"  className={styles.navLink}>Facilities</Link></li>
       </ul>
       <button className={styles.navbarButton}>My Bookings</button>
     </nav>

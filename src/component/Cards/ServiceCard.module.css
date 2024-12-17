@@ -1,0 +1,32 @@
+.serviceCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 150px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius:10px;
+    background-color: white;
+    cursor: pointer;
+}
+.serviceCard img{
+    width: 60px;
+    height: 60px;
+}
+.serviceCard h3{
+   color: #ABB6C7;
+   font-size: 1rem;
+   font-weight: 300;
+}
+.serviceCard:hover{
+    border: #2AA8FF solid 2px;
+}
+.serviceCard:hover h3{
+   color: #2AA8FF;
+   font-weight:500;
+}
+.large{
+    width: 250px;
+    height: 150px;
+}
