@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const Booking=()=>{
      
-    const list=localStorage.getItem("hopstial");
+    const list=localStorage.getItem("hospital");
     const [data, setData] = useState(list ? JSON.parse(list) : []);
     const [hospital, setHospital] = useState("");
 

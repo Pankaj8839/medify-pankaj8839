@@ -50,8 +50,15 @@ const HospitalCard = ({ name, city, state, fromSerachIsBooked, handleBookChange 
     slot:slot
    }
    const existingData = JSON.parse(localStorage.getItem("hospital")) || [];
-   existingData.push(obj);
-   localStorage.setItem("hopstial",JSON.stringify(existingData));
+   const newArray = [...existingData, obj];
+   console.log(newArray);
+   console.log("after----------------------------------- push");
+   console.log(newArray);
+   console.log("after----------------------------------- push");
+   localStorage.setItem("hospital",JSON.stringify(newArray));
+   console.log("from loacal storage");
+   console.log(JSON.parse(localStorage.getItem("hospital")))
+   console.log("from loacal storage");
    navigate("/booking");
    
   };
