@@ -59,7 +59,7 @@
     align-items: center;
     padding-bottom: 20px;
 }
-.buttonContainer button{
+.button{
     background-color:#2AA7FF;
     border: none;
     color:white;
@@ -73,7 +73,7 @@
     border-radius: 10px;
     font-size: small;
 }
-.buttonContainer button:hover{
+.button:hover{
     background-color: #34567a;
 }
 .buttonContainer h3{
@@ -126,8 +126,34 @@
     justify-content: start;
     align-items: start;
 }
-
-
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+   
+}
+.closeButton{
+  background-color:grey;
+  padding: 10 20px;
+}
+.closeButton:hover{
+  background-color:red;
+}
+.readOnly{
+    border-radius: 10px;
+}
+.slotReadContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    width: 30%;
+    height: 200px;
+    margin-left: 20px;
+}
 
 
 

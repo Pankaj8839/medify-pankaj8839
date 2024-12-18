@@ -41,10 +41,13 @@ const Home = () => {
     useEffect(() => {
         const fetchState = async () => {
             try {
+                console.log("hello");
                 const response = await fetch("https://meddata-backend.onrender.com/states");
                 const data = await response.json();
                 setArrayState(data);
+                console.log(data);
             } catch (error) {
+                console.log("hello in error");
                 console.log(error);
             }
         }

@@ -9,6 +9,7 @@ const Search=()=>{
   const hospitals = location.state;
   const [hospitalArray, setHospitalArray] = useState(hospitals);
 
+
   const [isBooked, setIsBooked] = useState(true);
  
 
@@ -20,9 +21,7 @@ const Search=()=>{
 
   const { enqueueSnackbar } = useSnackbar();
 
-  const handleBookChange=()=>{
-    
-  }
+
 
 
   const handleClick=()=>{
@@ -113,15 +112,15 @@ const Search=()=>{
                     </div>
             </div>
             <div className={styles.body}>
-              <h5 className={styles.textHeader}>15 medical centers available in Alaska</h5>
+              <h5 className={styles.textHeader}>{hospitalArray.length} medical centers available in {hospitalArray[0]["City"]}</h5>
               <div className={styles.textTitle}>
                <img src={require("../../assests/verified.png")} alt="search" />
                <p>Book appointments with minimum wait-time & verified doctor details</p>
               </div>
               <div className={styles.cardContainer}>
                 {
-                  hospitalArray.map((hospital)=>{
-                    return <HospitalCard name={hospital["Hospital Name"]} city={hospital["City"]} state={hospital["State"]} fromSerachIsBooked={isBooked} handleBookChange={setIsBooked} />
+                  hospitalArray.map((hospital,index)=>{
+                    return <HospitalCard key={index} name={hospital["Hospital Name"]} city={hospital["City"]} state={hospital["State"]} fromSerachIsBooked={isBooked} handleBookChange={setIsBooked} />
                   })
                 }
               </div>

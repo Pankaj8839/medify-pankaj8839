@@ -3,7 +3,7 @@ import './App.css';
 import Layout from './component/Layout';
 import Home from "./page/Home/Home";
 import Search from "./page/Search/Search";
-import Booking from "./page/Booking";
+import Booking from "./page/Booking/Booking";
 import { SnackbarProvider } from 'notistack';
 
 function App() {
